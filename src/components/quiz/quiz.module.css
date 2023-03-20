@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  border: 1px solid #3171b6;
+  width: 300px;
+  height: 35px;
+  background: transparant;
+  text-align: center;
+  border-radius: 3px;
+  animation: form-translate 4s;
+}
+
+.button {
+  border: 1px solid #3171b6;
+  width: 300px;
+  height: 35px;
+  background: white;
+  text-align: center;
+  border-radius: 3px;
+  transition: background-color 1s, color 1s;
+  animation: form-translate 5s;
+}
+
+.button:hover {
+  background-color: #3171b6;
+  color: white;
+}
+
+@keyframes form-translate {
+  0% {
+    transform: translate(0, 100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}

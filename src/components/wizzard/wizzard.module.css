@@ -1,0 +1,40 @@
+.container {
+  position: relative;
+}
+
+.message {
+  position: absolute;
+  left: 90%;
+  bottom: 80%;
+  width: max-content;
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 40px;
+  animation: message-display 8s;
+}
+
+.image {
+  width: 328.508px;
+  height: 350px;
+  animation: wizzard-translate 4s;
+}
+
+@keyframes wizzard-translate {
+  0% {
+    transform: translate(0, -10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes message-display {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
